@@ -29,13 +29,15 @@ Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blo
 	|--------------|---------------------|
 	| Visual studio |   2019 or above    |
 	| Unreal Engine |  4.27 or above     |
-	| Unity         |                    |
+	| Unity         |  2020 LTS+         |
+- **System trusted certificate** 
+  Before the application can be run with Lenovo OpenXR runtimeï¼Œit should be signed with a system trusted certificate. if the certificates cannot be issued by a CA(Certificate Authority), a self-signed certificate can be generated with [New-SelfSignedCertificate](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2022-ps) and imported to system by [Import-Certificate
+](https://learn.microsoft.com/en-us/powershell/module/pki/import-certificate?view=windowsserver2022-ps)
 
 ## Components in PCAR version
-- Lenovo XR Shell£º Application manages to allow user start/stop openXR based application. To make your own app appear here, you should 
- xxx[**to do**]
-- Lenovo VDM£º an openXR based App that manages the multiple virtual screens
-- Lenovo Launcher 3D£ºAn openXR based App which has the similar functions as Lenovo XR Shell
+- Lenovo XR Shellï¿½ï¿½ Application manages to allow user start/stop openXR based application. To make your own app appear here, you should use add a register item. Here is an example solution for how to do it  .[2DLauncher_config.zip](./2DLauncher_Config.zip)
+- Lenovo VDMï¿½ï¿½ an openXR based App that manages the multiple virtual screens
+- Lenovo Launcher 3Dï¿½ï¿½An openXR based App which has the similar functions as Lenovo XR Shell
 
 
 

@@ -1,0 +1,1 @@
+hello_xr.exe -g d3d12 -v
