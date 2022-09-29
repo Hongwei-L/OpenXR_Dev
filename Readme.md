@@ -19,9 +19,9 @@ Here are the respective sample code/project for C++,Unity, and Unreal engine.
 Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blob/main/BUILDING.md) to build it.
 2. **Unity** Please follow the office guidance of Unity https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.5/manual/index.html
   <br>**Note**:
-    a. Set interaction profile in Edit-->Project settings-->XR Plug-in management to "Khronos simple 
+    a) Set interaction profile in Edit-->Project settings-->XR Plug-in management to "Khronos simple 
   controller profile" 
-    b. Import the controller sample from openXR plugin package, you will get same sample as the prebuilt below
+    b) Import the controller sample from openXR plugin package, you will get same sample as the prebuilt below
  
 3. **Unreal Engine** Please follow the office guidance of Unreal Engine. https://docs.unrealengine.com/5.0/en-US/developing-for-head-mounted-experiences-with-openxr-in-unreal-engine/
 
