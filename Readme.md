@@ -18,13 +18,18 @@ Here are the respective sample code/project for C++,Unity, and Unreal engine.
 1. **C++** Hello_xr is an C++ example to discover, load, and draw some simple geometry. https://github.com/KhronosGroup/OpenXR-SDK-Source/tree/main/src/tests/hello_xr.  
 Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blob/main/BUILDING.md) to build it.
 2. **Unity** Please follow the office guidance of Unity https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.5/manual/index.html
+  <br>**Note**:
+    a. Set interaction profile in Edit-->Project settings-->XR Plug-in management to "Khronos simple 
+  controller profile" 
+    b. Import the controller sample from openXR plugin package, you will get same sample as the prebuilt below
+ 
 3. **Unreal Engine** Please follow the office guidance of Unreal Engine. https://docs.unrealengine.com/5.0/en-US/developing-for-head-mounted-experiences-with-openxr-in-unreal-engine/
 
 Current Lenovo openXR runtime will verify the signature of the above executable, follow step 1 
 in section below to import the root certificate.
 
 ### Try with the prebuilt binary ###
-You can try the 3 samples above with prebuilt binary. Goto sample_bin folder, then do the following:
+You can try the 3 samples above with prebuilt binary. Go to sample_bin folder, then do the following:
 1. import the root certificate by command with elevated cmd prompt
     `certmgr.exe /c /add root.spc /s -r localMachine root`  
 2. Attach your A3 glass to laptop, and close the automatically started virtual display app by 
@@ -44,8 +49,11 @@ failed to install, you will get stuck at startup. Try to kill lxrcompositor in t
 	| Unreal Engine |  4.27 or above     |
 	| Unity         |  2020 LTS+         |
 - **System trusted certificate** 
-  Before the application can be run with Lenovo OpenXR runtime，it should be signed with a system trusted certificate. if the certificates cannot be issued by a CA(Certificate Authority), a self-signed certificate can be generated with [New-SelfSignedCertificate](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2022-ps) and imported to system by [Import-Certificate
+  Before the application can be run with Lenovo OpenXR runtime，it should be signed with a system 
+ trusted certificate. For test purpose, you can generate a self-signed certificate with [New-SelfSignedCertificate](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2022-ps) 
+and imported to system by [Import-Certificate
 ](https://learn.microsoft.com/en-us/powershell/module/pki/import-certificate?view=windowsserver2022-ps)
+or the certmgr.exe in sample_bin
 
 ## Components in PCAR version
 - **Lenovo XR Shell** Application manages to allow user start/stop openXR based application. To make your own app appear here, you should use add a register item. Here is an example solution for how to do it  .[2DLauncher_config.zip](./2DLauncher_Config.zip)
