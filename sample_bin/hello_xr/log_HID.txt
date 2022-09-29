@@ -1,6 +1,0 @@
-09-28 14:25:29.359 I: Enter initial
-09-28 14:25:29.362 I: Interface number of OTA: 0c
-09-28 14:25:29.363 I: Interface number of CMD: 0b
-09-28 14:25:29.363 I: Opened HID devices with Lenovo VID/PID successfully
-09-28 14:25:29.363 I: Initial CMD successfully
-09-28 14:25:29.364 I: Exit from initial

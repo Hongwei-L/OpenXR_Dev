@@ -20,6 +20,19 @@ Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blo
 2. **Unity** Please follow the office guidance of Unity https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.5/manual/index.html
 3. **Unreal Engine** Please follow the office guidance of Unreal Engine. https://docs.unrealengine.com/5.0/en-US/developing-for-head-mounted-experiences-with-openxr-in-unreal-engine/
 
+Current Lenovo openXR runtime will verify the signature of the above executable, follow step 1 
+in section below to import the root certificate.
+
+### Try with the prebuilt binary ###
+You can try the 3 samples above with prebuilt binary. Goto sample_bin folder, then do the following:
+1. import the root certificate by command with elevated cmd prompt
+    `certmgr.exe /c /add root.spc /s -r localMachine root`  
+2. Attach your A3 glass to laptop, and close the automatically started virtual display app by 
+clicking the hidden XR manager icon.
+3. try the app by clicking the run_xr.bat in each sample app directory. If the root certificate 
+failed to install, you will get stuck at startup. Try to kill lxrcompositor in taskmgr.
+
+
 ## Prerequisites
 - **Device**    Lenovo ThinkReality A3
 - **Runtime**   [PCAR Version](https://support.lenovo.com/us/en/downloads/vdm)
@@ -35,9 +48,9 @@ Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blo
 ](https://learn.microsoft.com/en-us/powershell/module/pki/import-certificate?view=windowsserver2022-ps)
 
 ## Components in PCAR version
-- Lenovo XR Shell�� Application manages to allow user start/stop openXR based application. To make your own app appear here, you should use add a register item. Here is an example solution for how to do it  .[2DLauncher_config.zip](./2DLauncher_Config.zip)
-- Lenovo VDM�� an openXR based App that manages the multiple virtual screens
-- Lenovo Launcher 3D��An openXR based App which has the similar functions as Lenovo XR Shell
+- **Lenovo XR Shell** Application manages to allow user start/stop openXR based application. To make your own app appear here, you should use add a register item. Here is an example solution for how to do it  .[2DLauncher_config.zip](./2DLauncher_Config.zip)
+- **Lenovo VDM** an openXR based App that manages the multiple virtual screens
+- **Lenovo Launcher 3D** An openXR based App which has the similar functions as Lenovo XR Shell
 
 
 
