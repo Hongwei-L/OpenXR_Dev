@@ -28,7 +28,7 @@ Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blo
 Current Lenovo openXR runtime will verify the signature of the above executable, follow step 1 
 in section below to import the root certificate.
 
-## Try with the prebuilt binary 
+### Try with the prebuilt binary ###
 You can try the 3 samples above with prebuilt binary. First download this repository, then do the following:
 1. open cmd.exe with administrator priviledge
 2. `cd <repdir>\sample_bin_`
@@ -55,7 +55,7 @@ lxrcompositor process via taskmgr, it will restart automatically
 	| Unreal Engine |  4.27 or above     |
 	| Unity         |  2020 LTS+         |
 
-### Test with your own app ### 
+## Test with your own app
 Before your own application can run with Lenovo OpenXR runtime，it should be signed with a system 
  trusted certificate. You should obtain the certificate from known CA. 
 
