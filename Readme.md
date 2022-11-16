@@ -36,7 +36,9 @@ You can try the 3 samples above with prebuilt binary. First download this reposi
     `.\certmgr.exe /c /add root.spc /s -r localMachine root`  
 4. Attach your A3 glass to laptop, and close the automatically started virtual display app in the 
    Lenovo XR Shell. You should pop out the Lenovo XR Shell app by clicking the icon. 
- ![Iconpic](pic/XRShell.png#center)
+
+ <p style="text-align: center"><img src="pic/XRShell.png" alt="drawing" width="400"/></p>
+
 5. try the app by clicking the run_xr.bat in each sample app directory. If the root certificate 
 failed to install, you will get stuck at startup. Try to fix the certificate issue, and kill 
 lxrcompositor process via taskmgr, it will restart automatically
@@ -57,9 +59,9 @@ lxrcompositor process via taskmgr, it will restart automatically
 Before your own application can run with Lenovo OpenXR runtime，it should be signed with a system 
  trusted certificate. You should obtain the certificate from known CA. 
 
-For test purpose, you can use the root certificate mentioned in "Try with the prebuilt binary". The password  is "123456" for the [private key](./sample_bin/root.pvk) provided， which is needed when you sign with the [signcode.exe](./sample_bin/signcode.exe).  
+For test purpose, you can use the root certificate mentioned in "Try with the prebuilt binary"，Double click the [signcode.exe](./sample_bin/signcode.exe) and follow the wizard. In the step of "Signing Options" should choose the "Custom". In the step of "Signature Certificate" choose the [root.spc](./sample_bin/root.spc);In the step of "Private Key" choose the [root.pvk](./sample_bin/root.pvk). The password  is "123456" for the [private key](./sample_bin/root.pvk) 
 
-**Notice**: You **should not** use the certificate to sign your application for publish purpose. 
+**Notice**: You **SHOULD NOT** use the certificate to sign your application for publish purpose. 
 
 ## Components in PCAR version
 - **Lenovo XR Shell** Application manages to allow user start/stop openXR based application. To make your own app appear here, you should use add a register item. Here is an example solution for how to do it  .[2DLauncher_config.zip](./2DLauncher_Config.zip)
