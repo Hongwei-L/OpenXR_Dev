@@ -29,12 +29,14 @@ Current Lenovo openXR runtime will verify the signature of the above executable,
 in section below to import the root certificate.
 
 ### Try with the prebuilt binary ###
-You can try the 3 samples above with prebuilt binary. First download this repository, **go to sample_bin folder**, then do the following:
-1. import the root certificate by command with elevated cmd prompt
+You can try the 3 samples above with prebuilt binary. First download this repository, then do the following:
+1. open cmd.exe with administrator priviledge
+2. `cd <repdir>\sample_bin_`
+3. import the root certificatet
     `.\certmgr.exe /c /add root.spc /s -r localMachine root`  
-2. Attach your A3 glass to laptop, and close the automatically started virtual display app by 
-clicking the hidden XR manager icon.
-3. try the app by clicking the run_xr.bat in each sample app directory. If the root certificate 
+4. Attach your A3 glass to laptop, and close the automatically started virtual display app in the 
+   Lenovo XR Shell. You should pop out the Lenovo XR Shell app by clicking its icon from Windows icon area. 
+5. try the app by clicking the run_xr.bat in each sample app directory. If the root certificate 
 failed to install, you will get stuck at startup. Try to fix the certificate issue, and kill 
 lxrcompositor process via taskmgr, it will restart automatically
 
