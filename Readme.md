@@ -29,13 +29,14 @@ Current Lenovo openXR runtime will verify the signature of the above executable,
 in section below to import the root certificate.
 
 ### Try with the prebuilt binary ###
-You can try the 3 samples above with prebuilt binary. Go to sample_bin folder, then do the following:
+You can try the 3 samples above with prebuilt binary. First download this repository, **go to sample_bin folder**, then do the following:
 1. import the root certificate by command with elevated cmd prompt
-    `certmgr.exe /c /add root.spc /s -r localMachine root`  
+    `.\certmgr.exe /c /add root.spc /s -r localMachine root`  
 2. Attach your A3 glass to laptop, and close the automatically started virtual display app by 
 clicking the hidden XR manager icon.
 3. try the app by clicking the run_xr.bat in each sample app directory. If the root certificate 
-failed to install, you will get stuck at startup. Try to kill lxrcompositor in taskmgr.
+failed to install, you will get stuck at startup. Try to fix the certificate issue, and kill 
+lxrcompositor process via taskmgr, it will restart automatically
 
 
 ## Prerequisites
@@ -48,11 +49,12 @@ failed to install, you will get stuck at startup. Try to kill lxrcompositor in t
 	| Visual studio |   2019 or above    |
 	| Unreal Engine |  4.27 or above     |
 	| Unity         |  2020 LTS+         |
-- **System trusted certificate** 
-  Before the application can be run with Lenovo OpenXR runtime，it should be signed with a system 
- trusted certificate. For test purpose, you can generate a self-signed certificate with [New-SelfSignedCertificate](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2022-ps) 
-and imported to system by [Import-Certificate
-](https://learn.microsoft.com/en-us/powershell/module/pki/import-certificate?view=windowsserver2022-ps)
+
+### Test with your own app ### 
+Before your own application can run with Lenovo OpenXR runtime，it should be signed with a system 
+ trusted certificate. You should obtain the certificate from known CA. 
+
+For test purpose, you can use the root certificate mentioned in "Try with the prebuilt binary"
 or the certmgr.exe in sample_bin
 
 ## Components in PCAR version
