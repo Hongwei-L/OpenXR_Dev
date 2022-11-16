@@ -18,17 +18,17 @@ Here are the respective sample code/project for C++,Unity, and Unreal engine.
 1. **C++** Hello_xr is an C++ example to discover, load, and draw some simple geometry. https://github.com/KhronosGroup/OpenXR-SDK-Source/tree/main/src/tests/hello_xr.  
 Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blob/main/BUILDING.md) to build it.
 2. **Unity** Please follow the office guidance of Unity https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.5/manual/index.html
-  <br>**Note**:
-    a) Set interaction profile in Edit-->Project settings-->XR Plug-in management to "Khronos simple 
-  controller profile" 
-    b) Import the controller sample from openXR plugin package, you will get same sample as the prebuilt below
+  <br>**Note**:<br>
+     &emsp; a) Set interaction profile in Edit-->Project settings-->XR Plug-in management to "Khronos simple 
+  controller profile"<br>
+      &emsp; b) Import the controller sample from openXR plugin package, you will get same sample as the prebuilt below
  
 3. **Unreal Engine** Please follow the office guidance of Unreal Engine. https://docs.unrealengine.com/5.0/en-US/developing-for-head-mounted-experiences-with-openxr-in-unreal-engine/
 
 Current Lenovo openXR runtime will verify the signature of the above executable, follow step 1 
 in section below to import the root certificate.
 
-### Try with the prebuilt binary ###
+## Try with the prebuilt binary 
 You can try the 3 samples above with prebuilt binary. First download this repository, then do the following:
 1. open cmd.exe with administrator priviledge
 2. `cd <repdir>\sample_bin_`
@@ -59,9 +59,8 @@ lxrcompositor process via taskmgr, it will restart automatically
 Before your own application can run with Lenovo OpenXR runtime，it should be signed with a system 
  trusted certificate. You should obtain the certificate from known CA. 
 
-For test purpose, you can use the root certificate mentioned in "Try with the prebuilt binary"，Double click the [signcode.exe](./sample_bin/signcode.exe) and follow the wizard. In the step of "Signing Options" should choose the "Custom". In the step of "Signature Certificate" choose the [root.spc](./sample_bin/root.spc);In the step of "Private Key" choose the [root.pvk](./sample_bin/root.pvk). The password  is "123456" for the [private key](./sample_bin/root.pvk) 
-
-**Notice**: You **SHOULD NOT** use the certificate to sign your application for publish purpose. 
+For test purpose, you can use the root certificate mentioned in "Try with the prebuilt binary"，Double click the [signcode.exe](./sample_bin/signcode.exe) and follow the wizard. In the step of "Signing Options" should choose the "Custom"; In the step of "Signature Certificate" choose the [root.spc](./sample_bin/root.spc); In the step of "Private Key" choose the [root.pvk](./sample_bin/root.pvk). The password  is "123456" for the [private key](./sample_bin/root.pvk) which named as root.pvk.<br>
+**Notice**: **SHOULD NOT** use the certificate to sign application for publish purpose. 
 
 ## Components in PCAR version
 - **Lenovo XR Shell** Application manages to allow user start/stop openXR based application. To make your own app appear here, you should use add a register item. Here is an example solution for how to do it  .[2DLauncher_config.zip](./2DLauncher_Config.zip)
