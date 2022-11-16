@@ -56,8 +56,9 @@ lxrcompositor process via taskmgr, it will restart automatically
 Before your own application can run with Lenovo OpenXR runtime，it should be signed with a system 
  trusted certificate. You should obtain the certificate from known CA. 
 
-For test purpose, you can use the root certificate mentioned in "Try with the prebuilt binary"
-or the certmgr.exe in sample_bin
+For test purpose, you can use the root certificate mentioned in "Try with the prebuilt binary". The password  is "123456" for the [private key](./sample_bin/root.pvk) provided， which is needed when you sign with the [signcode.exe](./sample_bin/signcode.exe).  
+
+**Notice**: You **should not** use the certificate to sign your application for publish purpose. 
 
 ## Components in PCAR version
 - **Lenovo XR Shell** Application manages to allow user start/stop openXR based application. To make your own app appear here, you should use add a register item. Here is an example solution for how to do it  .[2DLauncher_config.zip](./2DLauncher_Config.zip)
