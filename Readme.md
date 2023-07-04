@@ -19,11 +19,16 @@ Here are the respective sample code/project for C++,Unity, and Unreal engine.
 Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blob/main/BUILDING.md) to build it.
 2. **Unity** Please follow the office guidance of Unity https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.5/manual/index.html
   <br>**Note**:<br>
-     &emsp; a) Set interaction profile in Edit-->Project settings-->XR Plug-in management to "Khronos simple 
-  controller profile"<br>
-      &emsp; b) Import the controller sample from openXR plugin package, you will get same sample as the prebuilt below
+     &emsp; a) Install the OpenXR plugin and import the controller sample from openXR plugin package<br>
+      <p style="text-align: center"><img src="pic/importSample.png" alt="drawing" width="400"/></p>
+      &emsp; b) Set interaction profile in Edit-->Project settings-->XR Plug-in management to "Khronos simple 
+  controller profile" 
+    <p style="text-align: center"><img src="pic/knorosseting.png" alt="drawing" width="400"/></p>
+      &emsp; c)Set the Plug-in Providers to OpenXR in Edit-->Project settings-->XR Plug-in management
+      <p style="text-align: center"><img src="pic/pluginprovides.png" alt="drawing" width="400"/></p>
+     
  
-3. **Unreal Engine** Please follow the office guidance of Unreal Engine. https://docs.unrealengine.com/5.0/en-US/developing-for-head-mounted-experiences-with-openxr-in-unreal-engine/
+1. **Unreal Engine** Please follow the office guidance of Unreal Engine. https://docs.unrealengine.com/5.0/en-US/developing-for-head-mounted-experiences-with-openxr-in-unreal-engine/
 
 
 ### Try with the prebuilt binary ###
@@ -37,7 +42,7 @@ Attach your A3 glass to laptop, and close the automatically started virtual disp
 
 
 ## Prerequisites
-- **Device**    Lenovo ThinkReality A3
+- **Device**    Lenovo ThinkReality A3 
 - **Runtime**   [PCAR Version](https://support.lenovo.com/us/en/downloads/vdm)
 - **Development Software** 
 
@@ -47,6 +52,7 @@ Attach your A3 glass to laptop, and close the automatically started virtual disp
 	| Unreal Engine |  4.27 or above     |
 	| Unity         |  2020 LTS+         |
 
+<!-- slide -->
 
 ## Components in PCAR version
 - **Lenovo XR Shell** Application manages to allow user start/stop openXR based application. To make your own app appear here, you should use add a register item. Here is an example solution for how to do it  .[2DLauncher_config.zip](./2DLauncher_Config.zip)
