@@ -20,16 +20,15 @@ Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blo
 2. **Unity** Please follow the office guidance of Unity https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.5/manual/index.html
   <br>**Note**:<br>
      &emsp; a) Install the OpenXR plugin and import the controller sample from openXR plugin package<br>
-      <p style="text-align: center"><img src="pic/importSample.png" alt="drawing" width="400"/></p>
-      &emsp; b) Set interaction profile in Edit-->Project settings-->XR Plug-in management to "Khronos simple 
-  controller profile" <br>
-    <p style="text-align: center"><img src="pic/knorosseting.png" alt="drawing" width="400"/></p>
-      &emsp; c) Set the Plug-in Providers to OpenXR in Edit-->Project settings-->XR Plug-in management <br>
+      <p style="text-align: center"><img src="pic/importSample.png" alt="drawing" width="400"/></p><br>
+      &emsp; b) Set interaction profile in Edit-->Project settings-->XR Plug-in management to "Khronos simple controller profile" <br>
+     <p style="text-align: center"><img src="pic/knorosseting.png" alt="drawing" width="400"/></p><br>
+     &emsp; c) Set the Plug-in Providers to OpenXR in Edit-->Project settings-->XR Plug-in management <br>
       <p style="text-align: center"><img src="pic/pluginprovides.png" alt="drawing" width="400"/></p>
      &emsp; d) Open the ControllerSample  in Assets\Samples\OpenXR Plugin\1.6.0. In the sample project it uses the keyboard to animate the controller <br>
      
  
-3. **Unreal Engine** Please follow the office guidance of Unreal Engine. https://docs.unrealengine.com/5.0/en-US/developing-for-head-mounted-experiences-with-openxr-in-unreal-engine/
+1. **Unreal Engine** Please follow the office guidance of Unreal Engine. https://docs.unrealengine.com/5.0/en-US/developing-for-head-mounted-experiences-with-openxr-in-unreal-engine/
 
 
 ### Try with the prebuilt binary ###
