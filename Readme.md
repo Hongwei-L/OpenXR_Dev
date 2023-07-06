@@ -25,7 +25,7 @@ Please follow this [guide](https://github.com/KhronosGroup/OpenXR-SDK-Source/blo
      <p style="text-align: center"><img src="pic/knorosseting.png" alt="drawing" width="400"/></p><br>
      &emsp; c) Set the Plug-in Providers to OpenXR in Edit-->Project settings-->XR Plug-in management <br>
       <p style="text-align: center"><img src="pic/pluginprovides.png" alt="drawing" width="400"/></p>
-     &emsp; d) Open the ControllerSample  in Assets\Samples\OpenXR Plugin\1.6.0. In the sample project it uses the keyboard to animate the controller <br>
+     &emsp; d) Open the ControllerSample  in Assets\Samples\OpenXR Plugin\1.6.0. In the sample project it uses the keyboard to simulate the controller <br>
      
  
 1. **Unreal Engine** Please follow the office guidance of Unreal Engine. https://docs.unrealengine.com/5.0/en-US/developing-for-head-mounted-experiences-with-openxr-in-unreal-engine/
